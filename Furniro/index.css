@@ -1,0 +1,234 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar-brand span {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    margin: 0 15px;
+  }
+  
+  .nav-link.active {
+    color: #222;
+    font-weight: bold;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28234, 67, 53, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #fdfdfd;
+    padding: 60px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content .btn {
+    font-size: 1.1rem;
+    border-radius: 5px;
+  }
+  
+  .hero-image img {
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content {
+      margin-bottom: 30px;
+    }
+  }
+/* Browse The Range Section */
+.browse-range {
+    background-color: #f9f9f9;
+  }
+  
+  .browse-range h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .browse-range p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .browse-range .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .browse-range .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .browse-range .card img {
+    height: 250px;
+    object-fit: cover;
+  }
+  .hover-effect {
+    transition: opacity 0.3s ease-in-out;
+    transform: translateY(8px);
+  }
+  
+  .hover-effect:hover {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .beautiful-rooms {
+    background-color: #fafafa;
+  }
+  
+  .beautiful-rooms h2 {
+    font-size: 2.5rem;
+  }
+  
+  .beautiful-rooms .card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .beautiful-rooms .card-body small {
+    font-size: 0.9rem;
+  }
+  
+  .beautiful-rooms .carousel-control-prev-icon,
+  .beautiful-rooms .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  
+  .beautiful-rooms .btn-link {
+    font-size: 1.2rem;
+  }
+  
+  .footer ul {
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer form input {
+    max-width: 250px;
+  }
+  
+  .footer form button {
+    white-space: nowrap;
+  }
+  /* General Product Card Styling */
+.product-card {
+  position: relative;
+  overflow: hidden; /* Ensures hover effect stays within the card */
+}
+
+.product-card img {
+  height: 250px; /* Consistent height for all images */
+  object-fit: cover; /* Ensures images fill the container without distortion */
+  width: 100%;
+}
+
+/* Card Layout */
+.card {
+  height: 100%; /* Ensures cards maintain consistent height */
+  display: flex;
+  flex-direction: column; /* Align card body and image properly */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Badge Styling */
+.card .badge {
+  font-size: 0.8rem; /* Adjust badge font size */
+  padding: 0.4rem 0.6rem; /* Adjust padding for rounded-pill */
+  background-color: red;
+}
+
+/* Hover Effect Container */
+.hover-effect {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Make Hover Effect Visible */
+.product-card:hover .hover-effect {
+  opacity: 1;
+}
+
+/* Button Styling Inside Hover Effect */
+.hover-effect button {
+  z-index: 2;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.product-card:hover .hover-effect button {
+  transform: scale(1.1); /* Slight zoom on hover */
+  background-color: #ffffff; /* Add a background color change */
+}
+
+/* Hover Buttons and Icons */
+.hover-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hover-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.hover-icons span {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.hover-icons span:hover {
+  transform: scale(1.2); /* Enlarge icon slightly on hover */
+  color: #ff5722; /* Change icon color on hover */
+}
