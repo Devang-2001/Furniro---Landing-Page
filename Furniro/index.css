@@ -1,11 +1,11 @@
-/* Global Styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
   }
   
-  /* Navbar */
+
   .navbar-brand span {
     font-size: 1.5rem;
   }
@@ -19,12 +19,7 @@ body {
     color: #222;
     font-weight: bold;
   }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28234, 67, 53, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-  
-  /* Hero Section */
+
   .hero {
     background-color: #fdfdfd;
     padding: 60px 0;
@@ -50,8 +45,7 @@ body {
     max-width: 500px;
     border-radius: 10px;
   }
-  
-  /* Responsive Styles */
+
   @media (max-width: 768px) {
     .hero {
       flex-direction: column;
@@ -62,7 +56,7 @@ body {
       margin-bottom: 30px;
     }
   }
-/* Browse The Range Section */
+
 .browse-range {
     background-color: #f9f9f9;
   }
@@ -144,23 +138,22 @@ body {
   .footer form button {
     white-space: nowrap;
   }
-  /* General Product Card Styling */
+
 .product-card {
   position: relative;
-  overflow: hidden; /* Ensures hover effect stays within the card */
+  overflow: hidden; 
 }
 
 .product-card img {
-  height: 250px; /* Consistent height for all images */
-  object-fit: cover; /* Ensures images fill the container without distortion */
+  height: 250px; 
+  object-fit: cover; 
   width: 100%;
 }
 
-/* Card Layout */
 .card {
-  height: 100%; /* Ensures cards maintain consistent height */
+  height: 100%;
   display: flex;
-  flex-direction: column; /* Align card body and image properly */
+  flex-direction: column; 
 }
 
 .card-body {
@@ -170,16 +163,16 @@ body {
   text-align: center;
 }
 
-/* Badge Styling */
+
 .card .badge {
-  font-size: 0.8rem; /* Adjust badge font size */
-  padding: 0.4rem 0.6rem; /* Adjust padding for rounded-pill */
+  font-size: 0.8rem; 
+  padding: 0.4rem 0.6rem; 
   background-color: red;
 }
 
-/* Hover Effect Container */
+
 .hover-effect {
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -188,27 +181,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0; /* Initially hidden */
+  opacity: 0; 
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Make Hover Effect Visible */
 .product-card:hover .hover-effect {
   opacity: 1;
 }
 
-/* Button Styling Inside Hover Effect */
 .hover-effect button {
   z-index: 2;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease;
 }
 
 .product-card:hover .hover-effect button {
-  transform: scale(1.1); /* Slight zoom on hover */
-  background-color: #ffffff; /* Add a background color change */
+  transform: scale(1.1); 
+  background-color: #ffffff;
 }
 
-/* Hover Buttons and Icons */
+
 .hover-buttons {
   display: flex;
   flex-direction: column;
@@ -229,6 +220,6 @@ body {
 }
 
 .hover-icons span:hover {
-  transform: scale(1.2); /* Enlarge icon slightly on hover */
-  color: #ff5722; /* Change icon color on hover */
+  transform: scale(1.2);
+  color: #ff5722; 
 }
